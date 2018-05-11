@@ -1,0 +1,10 @@
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\bin\Debug\Phobia-R.exe.config
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\bin\Debug\Phobia-R.exe
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\bin\Debug\Phobia-R.pdb
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia-R.csprojResolveAssemblyReference.cache
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia_R.Properties.Resources.resources
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia-R.csproj.GenerateResource.cache
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia-R.csproj.CoreCompileInputs.cache
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia-R.exe
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia-R.pdb
+C:\Users\Korvus\source\repos\Phobia-R\Phobia-R\obj\Debug\Phobia_R.MainForm.resources
