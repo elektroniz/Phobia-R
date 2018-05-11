@@ -45,7 +45,7 @@ Currently in beta version - below 1.0
 ## Authors
 
 **Korvus Neb aka Korvux**
-<img src=https://i.imgur.com/6Kpuwlo.jpg>
+<img src=https://i.imgur.com/6Kpuwlo.jpg width="50%" height="50%">
 
 ## License
 
