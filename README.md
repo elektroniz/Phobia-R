@@ -7,6 +7,7 @@ This allows the user to have control over the means of communication and thus be
 
 Currently, the development of this software is in its **infancy**, so for now it only has these accessible protocols:
 
+- HTTP/HTTPS
 
 ### Prerequisites??
 
