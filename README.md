@@ -43,11 +43,11 @@ You have freedom of expression, you can use it the way you want.
 Currently in beta version - below 1.0
 
 ## Authors
-
-**Korvus Neb aka Korvux**
 <p align="center">
-<img src=https://i.imgur.com/6Kpuwlo.jpg width="60%" height="60%">
+  # Korvus Neb aka Korvux
+  <img src=https://i.imgur.com/6Kpuwlo.jpg width="60%" height="60%">
 </p>
+
 ## License
 
 This project is licensed under the GPLv3
