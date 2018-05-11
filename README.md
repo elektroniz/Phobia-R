@@ -18,7 +18,7 @@ You can compile it and edit it through visual studio, otherwise you could use an
 
 ## How to use
 
-![alt text](https://imgur.com/gZFkaL6 "Phobia-R logo")
+![alt text](https://i.imgur.com/gZFkaL6.png "Phobia-R logo")
 
 ## Contributing
 
