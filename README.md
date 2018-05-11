@@ -1,6 +1,9 @@
 # Phobia-R
-
+<p align="center">
 ![CRAN](https://img.shields.io/cran/l/devtools.svg)
+![CRAN](https://img.shields.io/badge/Version-0.1-orange.svg)
+![CRAN](https://img.shields.io/badge/FREE-DOOM-red.svg)
+</p>
 
 The purpose of this desktop software is to have the possibility to send requests through a protocol chosen by the user and through the syntax expected from it.
 This allows the user to have control over the means of communication and thus be able to test possible cases related to programming and computer network.
