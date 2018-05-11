@@ -17,7 +17,7 @@ This software has as a technical feature that you don't want to have dependencie
 You can compile it and edit it through visual studio, otherwise you could use any other software that does the same job.
 
 ## How to use
-![alt text](https://imgur.com/gZFkaL6)
+![Alt text](https://imgur.com/gZFkaL6)
 
 ## Contributing
 
