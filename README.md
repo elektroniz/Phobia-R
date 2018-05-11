@@ -3,7 +3,7 @@
 The purpose of this desktop software is to have the possibility to send requests through a protocol chosen by the user and through the syntax expected from it.
 This allows the user to have control over the means of communication and thus be able to test possible cases related to programming and computer network.
 
-## Current status
+## About this software
 
 Currently, the development of this software is in its **infancy**, so for now it only has these accessible protocols:
 
