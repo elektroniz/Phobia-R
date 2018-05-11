@@ -42,11 +42,8 @@ You have freedom of expression, you can use it the way you want.
 
 Currently in beta version - below 1.0
 
-## Authors
-<p align="center">
-  **Korvus Neb aka Korvux**
-  <img src=https://i.imgur.com/6Kpuwlo.jpg width="60%" height="60%">
-</p>
+## Author
+**Korvus Neb aka Korvux**
 
 ## License
 
