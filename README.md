@@ -42,9 +42,6 @@ You have freedom of expression, you can use it the way you want.
 
 Currently in beta version - below 1.0
 
-## Author
-**Korvus Neb aka Korvux**
-
 ## License
 
 This project is licensed under the GPLv3
