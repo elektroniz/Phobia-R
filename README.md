@@ -20,6 +20,14 @@ You can compile it and edit it through visual studio, otherwise you could use an
 
 ![alt text](https://i.imgur.com/gZFkaL6.png "Phobia-R logo")
 
+It is as simple as burning a church in norway.
+
+In the texbox on your left is inserted the input that includes a format related to the chosen protocol (Currently only the HTTP protocol is available). 
+
+Once the request is built press the right arrow to send the request, once the response is received it will be brutally spit into the textbox on the right.
+
+Easy right?
+
 ## Contributing
 
 You have freedom of expression, you can use it the way you want.
