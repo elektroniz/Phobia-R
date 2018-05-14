@@ -45,3 +45,13 @@ Currently in beta version - below 1.0
 ## License
 
 This project is licensed under the GPLv3
+
+
+## Functions Added
+
+- Possibility to save the file with name and a default extension
+
+## To Do
+
+- Create a template for each type of request
+- Add a new protocol
