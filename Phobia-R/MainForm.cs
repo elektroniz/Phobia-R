@@ -6,7 +6,7 @@
 ██║  ██╗╚██████╔╝██║  ██║ ╚████╔╝ ╚██████╔╝██╔╝ ██╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝
 ###################################################
-Software Version: 0.1
+Software Version: 0.1.3
 Author: Korvux
 */
 
@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -143,6 +144,18 @@ namespace Phobia_R
             socket.Close();
 
             return body;
+        }
+
+        private void btnSaveFile_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveaswindow = new SaveFileDialog();
+            saveaswindow.Filter = "HTML Response|*.html|Json Response|*.json|Text Response|*.txt";
+            saveaswindow.Title = "Save a File";
+            if (saveaswindow.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string path = saveaswindow.FileName;
+                System.IO.File.WriteAllText(path, outputBox.Text);
+            }
         }
     }
 }

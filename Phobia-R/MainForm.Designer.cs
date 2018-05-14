@@ -39,6 +39,7 @@
             this.UnderWindowPanel = new System.Windows.Forms.Panel();
             this.PhobiarBox = new System.Windows.Forms.PictureBox();
             this.RightArrowBox = new System.Windows.Forms.PictureBox();
+            this.btnSaveFile = new System.Windows.Forms.Button();
             this.MovablePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UnderBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBox)).BeginInit();
@@ -156,12 +157,29 @@
             this.RightArrowBox.TabStop = false;
             this.RightArrowBox.Click += new System.EventHandler(this.RightArrowBox_Click);
             // 
+            // btnSaveFile
+            // 
+            this.btnSaveFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnSaveFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSaveFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveFile.Font = new System.Drawing.Font("Anonymice Powerline", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(130)))), ((int)(((byte)(118)))));
+            this.btnSaveFile.Location = new System.Drawing.Point(1037, 555);
+            this.btnSaveFile.Name = "btnSaveFile";
+            this.btnSaveFile.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveFile.TabIndex = 9;
+            this.btnSaveFile.Text = "Save";
+            this.btnSaveFile.UseVisualStyleBackColor = false;
+            this.btnSaveFile.Click += new System.EventHandler(this.btnSaveFile_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1147, 668);
+            this.Controls.Add(this.btnSaveFile);
             this.Controls.Add(this.UnderWindowPanel);
             this.Controls.Add(this.urlBox);
             this.Controls.Add(this.labelManualMode);
@@ -197,6 +215,7 @@
         private System.Windows.Forms.Label labelManualMode;
         private System.Windows.Forms.TextBox urlBox;
         private System.Windows.Forms.Panel UnderWindowPanel;
+        private System.Windows.Forms.Button btnSaveFile;
     }
 }
 
