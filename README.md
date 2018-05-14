@@ -41,6 +41,7 @@ You have freedom of expression, you can use it the way you want.
 ## Versioning
 
 Currently in beta version - below 1.0
+
 Ver: 0.1.3
 
 ## License
@@ -50,7 +51,7 @@ This project is licensed under the GPLv3
 
 ## Functions Added
 
-- Possibility to save the file with name and a default extension
+- Possibility to save the file with name and a default extension [Ver: 0.1.3]
 
 ## To Do
 
