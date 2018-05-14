@@ -41,6 +41,7 @@ You have freedom of expression, you can use it the way you want.
 ## Versioning
 
 Currently in beta version - below 1.0
+Ver: 0.1.3
 
 ## License
 
