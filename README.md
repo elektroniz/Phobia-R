@@ -57,3 +57,4 @@ This project is licensed under the GPLv3
 
 - Create a template for each type of request
 - Add a new protocol
+- Syntax Highlighting
