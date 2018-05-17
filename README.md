@@ -30,6 +30,8 @@ It is as simple as burning a church in norway.
 
 In the texbox on your left is inserted the input that includes a format related to the chosen protocol (Currently only the HTTP protocol is available). 
 
+Under the input textbox you can enter the URL where you want to establish the connection.
+
 Once the request is built press the right arrow to send the request, once the response is received it will be brutally spit into the textbox on the right.
 
 Easy right?
