@@ -16,9 +16,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Threading;
 using System.ComponentModel;
-using System.Collections.Generic;
 
 namespace Phobia_R
 {
