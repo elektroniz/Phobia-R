@@ -60,5 +60,6 @@ This project is licensed under the GPLv3.
 
 - Add a new protocols. (SSH, FTP, and many others)
 - Improving Threading.
+- Improve input control.
 - Syntax Highlighting.
 - Improving data collection
