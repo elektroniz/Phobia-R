@@ -42,21 +42,22 @@ You have freedom of expression, you can use it the way you want.
 
 ## Versioning
 
-Currently in beta version - below 1.0
+Currently in beta version - below 1.0.0
 
-Ver: 0.1.3
+Ver: 0.1.4
 
 ## License
 
-This project is licensed under the GPLv3
+This project is licensed under the GPLv3.
 
 
 ## Functions Added
 
-- Possibility to save the file with name and a default extension [Ver: 0.1.3]
+- Possibility to save the file with name and a default extension. [Ver: 0.1.3]
+- You can load presets from /data folder [Ver: 0.1.4]
 
 ## To Do
 
-- Create a template for each type of request
-- Add a new protocol
-- Syntax Highlighting
+- Add a new protocols. (SSH, FTP, and many others)
+- Improving Threading.
+- Syntax Highlighting.
