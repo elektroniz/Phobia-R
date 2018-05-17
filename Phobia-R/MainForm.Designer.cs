@@ -40,6 +40,7 @@
             this.PhobiarBox = new System.Windows.Forms.PictureBox();
             this.RightArrowBox = new System.Windows.Forms.PictureBox();
             this.btnSaveFile = new System.Windows.Forms.Button();
+            this.btnLoadTemplate = new System.Windows.Forms.Button();
             this.MovablePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UnderBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBox)).BeginInit();
@@ -53,11 +54,12 @@
             this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputBox.Font = new System.Drawing.Font("Anonymice Powerline", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.inputBox.Location = new System.Drawing.Point(41, 190);
+            this.inputBox.Location = new System.Drawing.Point(38, 145);
             this.inputBox.Multiline = true;
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(454, 346);
+            this.inputBox.Size = new System.Drawing.Size(454, 408);
             this.inputBox.TabIndex = 1;
+            this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
             // 
             // outputBox
             // 
@@ -65,10 +67,10 @@
             this.outputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outputBox.Font = new System.Drawing.Font("Anonymice Powerline", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(102)))));
-            this.outputBox.Location = new System.Drawing.Point(658, 190);
+            this.outputBox.Location = new System.Drawing.Point(601, 145);
             this.outputBox.Multiline = true;
             this.outputBox.Name = "outputBox";
-            this.outputBox.Size = new System.Drawing.Size(454, 346);
+            this.outputBox.Size = new System.Drawing.Size(454, 408);
             this.outputBox.TabIndex = 2;
             // 
             // MovablePanel
@@ -84,9 +86,9 @@
             // UnderBox
             // 
             this.UnderBox.Image = global::Phobia_R.Properties.Resources.horizontal_line_remove_buttonwhite;
-            this.UnderBox.Location = new System.Drawing.Point(1068, 16);
+            this.UnderBox.Location = new System.Drawing.Point(996, 16);
             this.UnderBox.Name = "UnderBox";
-            this.UnderBox.Size = new System.Drawing.Size(33, 17);
+            this.UnderBox.Size = new System.Drawing.Size(49, 17);
             this.UnderBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UnderBox.TabIndex = 6;
             this.UnderBox.TabStop = false;
@@ -95,9 +97,9 @@
             // CloseBox
             // 
             this.CloseBox.Image = global::Phobia_R.Properties.Resources.close_buttonwhite;
-            this.CloseBox.Location = new System.Drawing.Point(1107, 16);
+            this.CloseBox.Location = new System.Drawing.Point(1043, 16);
             this.CloseBox.Name = "CloseBox";
-            this.CloseBox.Size = new System.Drawing.Size(33, 17);
+            this.CloseBox.Size = new System.Drawing.Size(58, 17);
             this.CloseBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CloseBox.TabIndex = 5;
             this.CloseBox.TabStop = false;
@@ -108,7 +110,7 @@
             this.labelManualMode.AutoSize = true;
             this.labelManualMode.Font = new System.Drawing.Font("Anonymice Powerline", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelManualMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(130)))), ((int)(((byte)(118)))));
-            this.labelManualMode.Location = new System.Drawing.Point(35, 144);
+            this.labelManualMode.Location = new System.Drawing.Point(32, 101);
             this.labelManualMode.Name = "labelManualMode";
             this.labelManualMode.Size = new System.Drawing.Size(203, 32);
             this.labelManualMode.TabIndex = 6;
@@ -120,10 +122,10 @@
             this.urlBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.urlBox.Font = new System.Drawing.Font("Anonymice Powerline", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.urlBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.urlBox.Location = new System.Drawing.Point(41, 557);
+            this.urlBox.Location = new System.Drawing.Point(38, 572);
             this.urlBox.Multiline = true;
             this.urlBox.Name = "urlBox";
-            this.urlBox.Size = new System.Drawing.Size(454, 21);
+            this.urlBox.Size = new System.Drawing.Size(355, 21);
             this.urlBox.TabIndex = 7;
             // 
             // UnderWindowPanel
@@ -132,13 +134,13 @@
             this.UnderWindowPanel.ForeColor = System.Drawing.Color.Coral;
             this.UnderWindowPanel.Location = new System.Drawing.Point(-5, 634);
             this.UnderWindowPanel.Name = "UnderWindowPanel";
-            this.UnderWindowPanel.Size = new System.Drawing.Size(1158, 35);
+            this.UnderWindowPanel.Size = new System.Drawing.Size(1158, 40);
             this.UnderWindowPanel.TabIndex = 8;
             // 
             // PhobiarBox
             // 
             this.PhobiarBox.Image = global::Phobia_R.Properties.Resources.logo;
-            this.PhobiarBox.Location = new System.Drawing.Point(38, 12);
+            this.PhobiarBox.Location = new System.Drawing.Point(25, 12);
             this.PhobiarBox.Name = "PhobiarBox";
             this.PhobiarBox.Size = new System.Drawing.Size(230, 43);
             this.PhobiarBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -149,9 +151,9 @@
             // RightArrowBox
             // 
             this.RightArrowBox.Image = global::Phobia_R.Properties.Resources.keyboard_right_arrow_button;
-            this.RightArrowBox.Location = new System.Drawing.Point(501, 329);
+            this.RightArrowBox.Location = new System.Drawing.Point(498, 308);
             this.RightArrowBox.Name = "RightArrowBox";
-            this.RightArrowBox.Size = new System.Drawing.Size(151, 76);
+            this.RightArrowBox.Size = new System.Drawing.Size(97, 94);
             this.RightArrowBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RightArrowBox.TabIndex = 4;
             this.RightArrowBox.TabStop = false;
@@ -165,7 +167,7 @@
             this.btnSaveFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveFile.Font = new System.Drawing.Font("Anonymice Powerline", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(130)))), ((int)(((byte)(118)))));
-            this.btnSaveFile.Location = new System.Drawing.Point(1037, 555);
+            this.btnSaveFile.Location = new System.Drawing.Point(980, 570);
             this.btnSaveFile.Name = "btnSaveFile";
             this.btnSaveFile.Size = new System.Drawing.Size(75, 23);
             this.btnSaveFile.TabIndex = 9;
@@ -173,17 +175,34 @@
             this.btnSaveFile.UseVisualStyleBackColor = false;
             this.btnSaveFile.Click += new System.EventHandler(this.btnSaveFile_Click);
             // 
+            // btnLoadTemplate
+            // 
+            this.btnLoadTemplate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnLoadTemplate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLoadTemplate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoadTemplate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoadTemplate.Font = new System.Drawing.Font("Anonymice Powerline", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadTemplate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(130)))), ((int)(((byte)(118)))));
+            this.btnLoadTemplate.Location = new System.Drawing.Point(399, 570);
+            this.btnLoadTemplate.Name = "btnLoadTemplate";
+            this.btnLoadTemplate.Size = new System.Drawing.Size(93, 23);
+            this.btnLoadTemplate.TabIndex = 10;
+            this.btnLoadTemplate.Text = "Load Preset";
+            this.btnLoadTemplate.UseVisualStyleBackColor = false;
+            this.btnLoadTemplate.Click += new System.EventHandler(this.btnLoadTemplate_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1147, 668);
+            this.ClientSize = new System.Drawing.Size(1098, 673);
+            this.Controls.Add(this.PhobiarBox);
+            this.Controls.Add(this.btnLoadTemplate);
             this.Controls.Add(this.btnSaveFile);
             this.Controls.Add(this.UnderWindowPanel);
             this.Controls.Add(this.urlBox);
             this.Controls.Add(this.labelManualMode);
-            this.Controls.Add(this.PhobiarBox);
             this.Controls.Add(this.RightArrowBox);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.inputBox);
@@ -216,6 +235,7 @@
         private System.Windows.Forms.TextBox urlBox;
         private System.Windows.Forms.Panel UnderWindowPanel;
         private System.Windows.Forms.Button btnSaveFile;
+        private System.Windows.Forms.Button btnLoadTemplate;
     }
 }
 

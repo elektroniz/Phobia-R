@@ -103,5 +103,8 @@
   <ItemGroup>
     <None Include="Resources\if_user_half_information_103776.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\http-user-agent.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
