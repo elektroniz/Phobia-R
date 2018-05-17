@@ -54,7 +54,7 @@ This project is licensed under the GPLv3.
 ## Functions Added
 
 - Possibility to save the file with name and a default extension. [Ver: 0.1.3]
-- You can load presets from /data folder [Ver: 0.1.4]
+- You can load presets from /Data folder [Ver: 0.1.4]
 
 ## To Do
 
