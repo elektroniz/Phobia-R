@@ -1,0 +1,3 @@
+﻿GET /get HTTP/1.1
+Host: www.target.com
+User-Agent: Phobia-R
