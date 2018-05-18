@@ -17,6 +17,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.ComponentModel;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace Phobia_R
 {
@@ -25,8 +27,7 @@ namespace Phobia_R
     {
         // This method is automatically created and managed by Windows Forms designer and it defines everything you see on the form.
         public MainForm() => InitializeComponent();
-
-        bool flag = true;
+        
 
         // -------------------------- Temporany location --------------------------
         // Explaination: https://www.codeproject.com/Articles/11114/Move-window-form-without-Titlebar-in-C
@@ -62,11 +63,14 @@ namespace Phobia_R
 
         private void RightArrowBox_Click(object sender, EventArgs e)
         {
-            if (flag != true)
+            BackgroundWorker bg = new BackgroundWorker();
+
+            if (bg.IsBusy == true)
             {
-                MessageBox.Show("Message not elaborated yet\nPlease is suggested to insert a valid input");
-                return;
+                bg.CancelAsync();
+                bg.Dispose();
             }
+
             // In this code example, use a hard-coded
             // IP address and message.
             string urlIP = urlBox.Text;
@@ -89,13 +93,7 @@ namespace Phobia_R
             thchead.Name = "Connection Thread";
             thchead.Start();
             */
-            BackgroundWorker bg = new BackgroundWorker();
-
-            if (bg.IsBusy == true)
-            {
-                bg.CancelAsync();
-                bg.Dispose();
-            }
+            
 
             bg.DoWork += new DoWorkEventHandler(ConnectAndSend_DoWork);
             bg.RunWorkerCompleted += new RunWorkerCompletedEventHandler(ConnectAndSend_RunWorkerCompleted);
@@ -110,7 +108,6 @@ namespace Phobia_R
         // Networking Function  ---------------------------------------- Start ----
         private void ConnectAndSend_DoWork(object sender, DoWorkEventArgs underWorker)
         {
-            flag = false;
             string[] parameters = (string[])underWorker.Argument;
             string serverIP = parameters[0].ToString();
             string message = parameters[1].ToString();
@@ -125,19 +122,19 @@ namespace Phobia_R
 
             try { socket.Connect(serverIP, 80); } catch (SocketException) { underWorker.Result = "No such host is known, check url!"; }
             try { socket.Send(Encoding.ASCII.GetBytes(GETrequest)); } catch (SocketException e) { underWorker.Result = e.ToString(); }
-
+            try { socket.LingerState = new LingerOption(true, 10); } catch (SocketException e) { underWorker.Result = e.ToString();
+            }
             bool f = true; // Just so we know we are still reading
             string headerString = ""; // To store header information
             int contentLength = 0; // The body length
             byte[] bodyBuff = new byte[0]; // To later hold the body content
-
             while (f)
             {
                 // Read the header byte by byte, until \r\n\r\n
                 byte[] buffer = new byte[1];
-                try { socket.Receive(buffer, 0, 1, 0); } catch (SocketException e) { underWorker.Result = e.ToString(); }
+                try { socket.Receive(buffer, 0, 1, 0); } catch (SocketException e) { underWorker.Result = e.ToString(); return; }
 
-                try { headerString += Encoding.ASCII.GetString(buffer); } catch (ArgumentNullException e) { underWorker.Result =  e.ToString(); }
+                try { headerString += Encoding.ASCII.GetString(buffer); } catch (ArgumentException e) { underWorker.Result =  e.ToString(); return; }
 
                 if (headerString.Contains("\r\n\r\n"))
                 {
@@ -166,7 +163,6 @@ namespace Phobia_R
             body = Encoding.ASCII.GetString(bodyBuff);
 
             if (body == "") body = headerString;
-
             socket.Close();
 
             underWorker.Result = body;
@@ -176,8 +172,6 @@ namespace Phobia_R
         private void ConnectAndSend_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs underWorker)
         {
             outputBox.Text = (underWorker.Result).ToString();
-            flag = true;
-
         }
 
 
@@ -226,5 +220,6 @@ namespace Phobia_R
         {
 
         }
+
     }
 }
