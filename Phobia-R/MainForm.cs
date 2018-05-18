@@ -6,7 +6,7 @@
 ██║  ██╗╚██████╔╝██║  ██║ ╚████╔╝ ╚██████╔╝██╔╝ ██╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝
 ###################################################
-Software Version: 0.1.4
+Software Version: 0.1.5
 Author: Korvux
 */
 
@@ -17,8 +17,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.ComponentModel;
-using System.Drawing.Text;
-using System.Runtime.InteropServices;
+
 
 namespace Phobia_R
 {
