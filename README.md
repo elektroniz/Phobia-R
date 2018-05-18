@@ -63,3 +63,4 @@ This project is licensed under the GPLv3.
 - Syntax Highlighting.
 - Improving data collection
 - Adding embedded usage of the font: Anonymous Pro **Bold**.
+- Adding many request preset.
