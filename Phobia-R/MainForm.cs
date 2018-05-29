@@ -6,7 +6,7 @@
 ██║  ██╗╚██████╔╝██║  ██║ ╚████╔╝ ╚██████╔╝██╔╝ ██╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝
 ###################################################
-Software Version: 0.1.5
+Software Version: 0.1.6
 Author: Korvux
 */
 
@@ -18,7 +18,6 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.ComponentModel;
 
-
 namespace Phobia_R
 {
 
@@ -26,7 +25,6 @@ namespace Phobia_R
     {
         // This method is automatically created and managed by Windows Forms designer and it defines everything you see on the form.
         public MainForm() => InitializeComponent();
-        
 
         // -------------------------- Temporany location --------------------------
         // Explaination: https://www.codeproject.com/Articles/11114/Move-window-form-without-Titlebar-in-C
@@ -87,13 +85,7 @@ namespace Phobia_R
                 MessageBox.Show("You missed the domain/dot in the url!");
                 return;
             }
-            /*
-            Thread thchead = new Thread(() => ConnectAndSend(serverIP, message));
-            thchead.Name = "Connection Thread";
-            thchead.Start();
-            */
-            
-
+          
             bg.DoWork += new DoWorkEventHandler(ConnectAndSend_DoWork);
             bg.RunWorkerCompleted += new RunWorkerCompletedEventHandler(ConnectAndSend_RunWorkerCompleted);
 
