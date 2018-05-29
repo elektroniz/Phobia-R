@@ -44,7 +44,7 @@ You have freedom of expression, you can use it the way you want.
 
 Currently in beta version - below 1.0.0
 
-Ver: 0.1.5
+Ver: 0.1.6
 
 ## License
 
@@ -56,11 +56,11 @@ This project is licensed under the GPLv3.
 - Possibility to save the file with name and a default extension. [Ver: 0.1.3]
 - You can load presets from /Data folder [Ver: 0.1.4]
 - Improved URL address resolution [Ver: 0.1.5]
+- Added new Font [Ver: 0.1.6]
 
 ## To Do
 
 - Add a new protocols. (SSH, FTP, and many others)
 - Syntax Highlighting.
 - Improving data collection
-- Adding embedded usage of the font: Anonymous Pro **Bold**.
 - Adding many request preset.
